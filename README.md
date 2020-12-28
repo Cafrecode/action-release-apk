@@ -45,9 +45,10 @@ jobs:
 
 ### Secrets
 
-You'll need to provide this secret token to use the action (for publishing the APK). Enter these secrets in your Settings > Secrets
+You'll need to provide this secret token to use the action (for publishing the APK).
 
 * **TOKEN**: Create a new [access token](https://github.com/settings/tokens) with `repo` access.
+* Enter the generated key as value of a new secret with name `TOKEN` in Settings > Secrets of the repository you want to build from.
 
 I am unsure as to why using the default `GITHUB_TOKEN` provided universally will fail to authorize the user. This is the only workaround that I'd found.
 
